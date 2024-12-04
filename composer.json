@@ -1,5 +1,5 @@
 {
-    "name": "sig-shadae/silverstripe-dependentrequiredfields",
+    "name": "signify-nz/silverstripe-dependentrequiredfields",
     "description": "SilverStripe vendor module providing a validator which allows for fields to be required based on the values of other fields.",
     "type": "silverstripe-vendormodule",
     "keywords": [
@@ -28,7 +28,7 @@
     },
     "require": {
         "silverstripe/framework": "^4.0 || ^5.0",
-        "silverstripe/vendor-plugin": "^1.0",
+        "silverstripe/vendor-plugin": "^1.0 || ^2.0",
         "athari/yalinqo": "^2.4"
     },
     "require-dev": {

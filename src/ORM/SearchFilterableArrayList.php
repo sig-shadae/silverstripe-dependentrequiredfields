@@ -84,7 +84,7 @@ class SearchFilterableArrayList extends ArrayList
      * @see \Signify\ORM\SearchFilterableArrayList::exclude()
      * @link https://docs.silverstripe.org/en/4/developer_guides/model/searchfilters/
      */
-    public function excludeAny()
+    public function excludeAny(): static
     {
         $filters = call_user_func_array([$this, 'normaliseFilterArgs'], func_get_args());
         $linqQuery = $this->createFilteredQuery($filters, false);

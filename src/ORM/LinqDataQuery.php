@@ -43,8 +43,8 @@ class LinqDataQuery extends DataQuery
      * @var string
      */
     protected $whereRegex = '/(MATCH \()?"(?<field>[a-zA-Z0-9_-]+?)"(?(1)\)|) '
-    . '(?<operator>[a-zA-Z<>!= ]*?) (?<placeholder>\(?([\?, ]|NULL)+\)?)'
-    . ' ?(?<connection>OR|AND)?/';
+        . '(?<operator>[a-zA-Z<>!= ]*?) (?<placeholder>\(?([\?, ]|NULL)+\)?)'
+        . ' ?(?<connection>OR|AND)?/';
 
     /**
      * An array of closure templates for where statements.
@@ -530,7 +530,7 @@ class LinqDataQuery extends DataQuery
      * @throws \BadMethodCallException
      * @see \SilverStripe\ORM\DataQuery::limit()
      */
-    public function limit($limit, $offset = 0)
+    public function limit($limit, $offset = 0): static
     {
         // TODO consider implementing this method.
         throw new \BadMethodCallException(__METHOD__ . ' is not implemented.');
